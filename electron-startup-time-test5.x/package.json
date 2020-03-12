@@ -1,0 +1,35 @@
+{
+  "name": "electron-startup-time-test",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": " npm run win32",
+    "win32": "electron-builder --win --ia32  --dir",
+    "win64": "electron-builder --win --dir"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build": {
+    "directories": {
+      "output": "dist/app"
+    },
+    "win": {
+      "asar": true,
+      "signAndEditExecutable": true,
+      "verifyUpdateCodeSignature": false
+    }
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "5.x",
+    "electron-builder": "^22.3.2"
+  }
+}
