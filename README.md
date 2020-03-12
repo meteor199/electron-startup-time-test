@@ -20,3 +20,15 @@ from `BrowserWindow.loadFile` to `did-finish-load`
 | 6.x              | 5s+           |
 | 7.x              | 6s            |
 | 8.x              | 6s            |
+
+# Reproduce
+
+```
+# cd dir
+cd electron-startup-time-test8.x
+yarn
+yarn build
+
+# then run test.bat
+
+```
