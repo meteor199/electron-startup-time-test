@@ -1,6 +1,11 @@
-electron startup time test
+# electron startup time test
 
-# BrowserWindow.loadFile time
+It has been resolved due to the following reasons:
+
+- run electron 32x on windows x64,startup time + 5s
+- qihoo 360,startup time +3s
+
+## BrowserWindow.loadFile time
 
 **env**
 
@@ -21,7 +26,7 @@ from `BrowserWindow.loadFile` to `did-finish-load`
 | 7.x              | 6s            |
 | 8.x              | 6s            |
 
-# Reproduce
+### Reproduce
 
 ```
 # cd dir
